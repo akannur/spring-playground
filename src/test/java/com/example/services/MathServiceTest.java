@@ -5,8 +5,10 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
-
 import static org.junit.Assert.*;
+/**
+ * Created by anup on 22/04/17.
+ */
 @RunWith(SpringRunner.class)
 public class MathServiceTest {
 
@@ -28,6 +30,12 @@ public class MathServiceTest {
 
     String calculation = mathService.sum(params);
     assertEquals("4 + 5 + 6 = 15", calculation);
+  }
+
+  @Test
+  public void testRectangleInfo() throws Exception {
+    String response = mathService.rectangleInfo(4, 5, 6);
+    assertEquals("The volume of a 4x5x6 rectangle is 120", response);
   }
 
 }

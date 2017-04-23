@@ -60,5 +60,10 @@ public class MathService {
     return String.format("%s = %s", equation, sum);
   }
 
+  public String rectangleInfo(int length, int width, int height) {
+      int volume = length*width*height;
+      return String.format("The volume of a %sx%sx%s rectangle is %s", length, width, height, volume);
+  }
+
 
 }
