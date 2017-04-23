@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.071s</div>
+<div class="counter">0.065s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">testPiController</td>
-<td>0.071s</td>
+<td>0.065s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,14 +87,14 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2017-04-22 19:56:46.505  INFO 10448 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.TestPIController], using SpringBootContextLoader
-2017-04-22 19:56:46.506  INFO 10448 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.TestPIController]: no resource found for suffixes {-context.xml, Context.groovy}.
-2017-04-22 19:56:46.507  INFO 10448 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.TestPIController]: TestPIController does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2017-04-22 19:56:46.524  INFO 10448 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.TestPIController
-2017-04-22 19:56:46.527  INFO 10448 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2017-04-22 19:56:46.529  INFO 10448 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-2017-04-22 19:56:46.530  INFO 10448 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-2017-04-22 19:56:46.531  INFO 10448 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7ffbc104, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2d5949d2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@8b07c2f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@60d5df2e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4187c1d1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@26f717ea, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2d2d561f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@63cfd03b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1cb90cda, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2ef00e0]
+<pre>2017-04-22 20:25:26.346  INFO 11459 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.TestPIController], using SpringBootContextLoader
+2017-04-22 20:25:26.347  INFO 11459 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.TestPIController]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-04-22 20:25:26.347  INFO 11459 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.TestPIController]: TestPIController does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2017-04-22 20:25:26.354  INFO 11459 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.TestPIController
+2017-04-22 20:25:26.356  INFO 11459 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-04-22 20:25:26.358  INFO 11459 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2017-04-22 20:25:26.358  INFO 11459 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2017-04-22 20:25:26.358  INFO 11459 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3b59d115, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@af1d58a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6adc3476, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e4bf9c0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6bef4265, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6f368717, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@64c27103, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@258611a2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@34eb831d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6f3ea4a8]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -104,20 +104,20 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.5.2.RELEASE)
 
-2017-04-22 19:56:56.720  INFO 10448 --- [    Test worker] com.example.TestPIController             : Starting TestPIController on Anups-MacBook-Pro.local with PID 10448 (started by anup in /Users/anup/WORKSPACE/DISH/Galvanize/spring-playground)
-2017-04-22 19:56:56.720  INFO 10448 --- [    Test worker] com.example.TestPIController             : No active profile set, falling back to default profiles: default
-2017-04-22 19:56:56.724  INFO 10448 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2c61549d: startup date [Sat Apr 22 19:56:56 MDT 2017]; root of context hierarchy
-2017-04-22 19:56:57.135  INFO 10448 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2c61549d: startup date [Sat Apr 22 19:56:56 MDT 2017]; root of context hierarchy
-2017-04-22 19:56:57.153  INFO 10448 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/math/pi],methods=[GET]}&quot; onto public java.lang.String com.example.PIController.return_pi()
-2017-04-22 19:56:57.154  INFO 10448 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-04-22 19:56:57.155  INFO 10448 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-04-22 19:56:57.183  INFO 10448 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-04-22 19:56:57.183  INFO 10448 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-04-22 19:56:57.213  INFO 10448 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-04-22 19:56:57.303  INFO 10448 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
-2017-04-22 19:56:57.303  INFO 10448 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2017-04-22 19:56:57.317  INFO 10448 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 14 ms
-2017-04-22 19:56:57.380  INFO 10448 --- [    Test worker] com.example.TestPIController             : Started TestPIController in 10.833 seconds (JVM running for 45.849)
+2017-04-22 20:25:36.521  INFO 11459 --- [    Test worker] com.example.TestPIController             : Starting TestPIController on Anups-MacBook-Pro.local with PID 11459 (started by anup in /Users/anup/WORKSPACE/DISH/Galvanize/spring-playground)
+2017-04-22 20:25:36.522  INFO 11459 --- [    Test worker] com.example.TestPIController             : No active profile set, falling back to default profiles: default
+2017-04-22 20:25:36.524  INFO 11459 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7498685f: startup date [Sat Apr 22 20:25:36 MDT 2017]; root of context hierarchy
+2017-04-22 20:25:36.844  INFO 11459 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7498685f: startup date [Sat Apr 22 20:25:36 MDT 2017]; root of context hierarchy
+2017-04-22 20:25:36.862  INFO 11459 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/math/pi],methods=[GET]}&quot; onto public java.lang.String com.example.PIController.return_pi()
+2017-04-22 20:25:36.863  INFO 11459 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-22 20:25:36.864  INFO 11459 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-22 20:25:36.884  INFO 11459 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-22 20:25:36.884  INFO 11459 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-22 20:25:36.905  INFO 11459 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-22 20:25:37.019  INFO 11459 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2017-04-22 20:25:37.020  INFO 11459 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-04-22 20:25:37.031  INFO 11459 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 11 ms
+2017-04-22 20:25:37.092  INFO 11459 --- [    Test worker] com.example.TestPIController             : Started TestPIController in 10.73 seconds (JVM running for 255.716)
 </pre>
 </span>
 </div>
@@ -129,7 +129,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 3.4.1</a> at Apr 22, 2017 7:57:02 PM</p>
+<a href="http://www.gradle.org">Gradle 3.4.1</a> at Apr 22, 2017 8:25:42 PM</p>
 </div>
 </div>
 </body>

@@ -5,6 +5,10 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.junit.Assert.*;
 /**
  * Created by anup on 22/04/17.
@@ -36,6 +40,26 @@ public class MathServiceTest {
   public void testRectangleInfo() throws Exception {
     String response = mathService.rectangleInfo(4, 5, 6);
     assertEquals("The volume of a 4x5x6 rectangle is 120", response);
+  }
+
+  @Test
+  public void testAreawithInvalidCirlce() throws Exception {
+    Map<String, String> hm = new HashMap<String, String>();
+    hm.put("type", "circle");
+    hm.put("width", "4.5");
+
+    String response = mathService.area(hm);
+    assertEquals("Invalid", response);
+  }
+
+  @Test
+  public void testAreawithInvalidRectangle() throws Exception {
+    Map<String, String> hm = new HashMap<String, String>();
+    hm.put("type", "rectangle");
+    hm.put("radius", "4.5");
+
+    String response = mathService.area(hm);
+    assertEquals("Invalid", response);
   }
 
 }
