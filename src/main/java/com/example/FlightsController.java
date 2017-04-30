@@ -1,21 +1,23 @@
+/**
+ * Created by anup on 30/04/17.
+ */
+
 package com.example;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.*;
-
-/**
- * Created by anup on 30/04/17.
- */
 
 @RestController
 public class FlightsController {
 
     @GetMapping("/flights")
     public List<Flight> getFlights() {
-        Calendar calendar = new GregorianCalendar(2017,4,30,11,22);
+        Calendar calendar = new GregorianCalendar(2017,4,21,14,34);
 
         Map <Person, Integer> hm1 = new HashMap<Person, Integer>();
         Person person1 = new Person("Anup", "Kannur");
@@ -37,7 +39,7 @@ public class FlightsController {
 
     @GetMapping("/flights/flight")
     public Flight getFlight() {
-        Calendar calendar = new GregorianCalendar(2017,4,30,11,11);
+        Calendar calendar = new GregorianCalendar(2017,4,21,14,34);
 
         Map <Person, Integer> hm = new HashMap<Person, Integer>();
         Person person1 = new Person("Anup", "Kannur");
@@ -50,9 +52,17 @@ public class FlightsController {
         return flight;
     }
 
+
+    @PostMapping("/flights/tickets/total")
+    public FlightTotal getFlightTotal(@RequestBody Flight flight) {
+        return new FlightTotal(flight);
+    }
+
     public static class Flight {
         private Date departs;
         private List<PassengerInfo> tickets;
+
+        public Flight() {}
 
         public Flight(Date date, List<PassengerInfo> tickets) {
             this.setDeparts(date);
@@ -77,7 +87,7 @@ public class FlightsController {
         }
     }
 
-    public List<PassengerInfo> getPassengerInfo(Map<Person, Integer> peoplePriceMap) {
+    public static List<PassengerInfo> getPassengerInfo(Map<Person, Integer> peoplePriceMap) {
         List<PassengerInfo> passengerInfoList = new ArrayList<PassengerInfo>();
         Iterator it = peoplePriceMap.entrySet().iterator();
         while (it.hasNext()) {
@@ -100,6 +110,8 @@ public class FlightsController {
     public static class PassengerInfo {
         private Person passenger;
         private int price;
+
+        public PassengerInfo() {}
 
         public PassengerInfo(Person passenger, int price) {
             this.setPerson(passenger);
@@ -127,6 +139,8 @@ public class FlightsController {
         private String firstName;
         private String lastName;
 
+        public Person() {}
+
         public Person(String firstName, String lastName) {
             this.setFirstName(firstName);
             this.setLastName(lastName);
@@ -149,5 +163,24 @@ public class FlightsController {
         }
     }
 
-}
+    public static class FlightTotal {
+        private String result;
 
+        public FlightTotal(Flight flight) {
+            int total = 0;
+            for (PassengerInfo passengerInfo : flight.getTickets()) {
+                total += passengerInfo.getPrice();
+            }
+            this.setResult(Integer.toString(total));
+        }
+
+        public String getResult() {
+            return result;
+        }
+
+        public void setResult(String result) {
+            this.result = result;
+        }
+    }
+
+}
